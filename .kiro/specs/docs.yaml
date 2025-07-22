@@ -1,0 +1,33 @@
+# .kiro/specs/docs.yaml
+rules:
+  - language: "python"
+    type: "function"
+    format: "google"
+    template: |
+      """[description]
+      
+      Args:
+          [param_name] ([type]): [description]
+      
+      Returns:
+          [type]: [description]
+      """
+    examples:
+      - input: |
+          def add(a, b):
+              return a + b
+        output: |
+          """Adds two numbers.
+          
+          Args:
+              a (int): First number
+              b (int): Second number
+          
+          Returns:
+              int: Sum of a and b
+          """
+
+  - language: "javascript"
+    type: "function"
+    format: "jsdoc"
+    required_fields: ["description", "params", "returns"]

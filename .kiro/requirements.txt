@@ -1,0 +1,4 @@
+# requirements.txt
+kiro-ai>=1.0.0  # Specify the minimum Kiro version you tested with
+python>=3.8      # Required Python version
+click>=8.0.0     # Only if you're using the CLI (from Phase 2)
